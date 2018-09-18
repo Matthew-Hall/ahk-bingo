@@ -29,3 +29,6 @@ Things to add to AHK bingo / update
 			can probably do this using the seed
 7. Transparent images/ tokens to see the selection under the token ( )
 	uhhh.. look up transparency?
+8. Token select (X)
+	Add new tokens for people to use depending on preferance
+	add a token select to the first screen.
