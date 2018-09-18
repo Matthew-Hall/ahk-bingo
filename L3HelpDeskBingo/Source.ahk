@@ -191,242 +191,242 @@ while x < 25
 	if Choice%x% = 1
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\restart.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\restart.jpg
 		}
 	if Choice%x% = 2
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\boxer.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\boxer.jpg
 		}
 	if Choice%x% = 3
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\cics.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\cics.jpg
 		}
 	if Choice%x% = 4
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\autotime.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\autotime.jpg
 		}
 	if Choice%x% = 5
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\snow.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\snow.jpg
 		}
 	if Choice%x% = 6
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\escalate.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\escalate.jpg
 		}
 	if Choice%x% = 7
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\EASR.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\EASR.jpg
 		}
 	if Choice%x% = 8
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\sap.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\sap.jpg
 		}
 	if Choice%x% = 9
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\bomgar.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\bomgar.jpg
 		}
 	if Choice%x% = 10
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\ticketnumber.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\ticketnumber.jpg
 		}
 	if Choice%x% = 11
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\status.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\status.jpg
 		}
 	if Choice%x% = 12
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\external.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\external.jpg
 		}
 	if Choice%x% = 13
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\notsolved.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\notsolved.jpg
 		}
 	if Choice%x% = 14
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\callback.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\callback.jpg
 		}
 	if Choice%x% = 15
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\ooo.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\ooo.jpg
 		}
 	if Choice%x% = 16
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\undelbell.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\undelbell.jpg
 		}
 	if Choice%x% = 17
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\undel3.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\undel3.jpg
 		}
 	if Choice%x% = 18
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\euu.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\euu.jpg
 		}
 	if Choice%x% = 19
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\closed.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\closed.jpg
 		}
 	if Choice%x% = 20
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\lost.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\lost.jpg
 		}
 	if Choice%x% = 21
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\answer.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\answer.jpg
 		}
 	if Choice%x% = 22
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\local.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\local.jpg
 		}
 	if Choice%x% = 23
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\chat.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\chat.jpg
 		}
 	if Choice%x% = 24
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\snowemail.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\snowemail.jpg
 		}
 	if Choice%x% = 25
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\important.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\important.jpg
 		}
 	if Choice%x% = 26
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\quickescalation.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\quickescalation.jpg
 		}
 	if Choice%x% = 27
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\building157.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\building157.jpg
 		}
 	if Choice%x% = 28
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\VPN.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\VPN.jpg
 		}
 	if Choice%x% = 29
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\invincea.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\invincea.jpg
 		}
 	if Choice%x% = 30
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\told.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\told.jpg
 		}
 	if Choice%x% = 31
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\sharepoint.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\sharepoint.jpg
 		}
 	if Choice%x% = 32
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\driveshare.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\driveshare.jpg
 		}
 	if Choice%x% = 33
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\rtw.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\rtw.jpg
 		}
 	if Choice%x% = 34
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\loa.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\loa.jpg
 		}
 	if Choice%x% = 35
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\outlook.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\outlook.jpg
 		}
 	if Choice%x% = 36
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\outbound.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\outbound.jpg
 		}
 	if Choice%x% = 37
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\friday.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\friday.jpg
 		}
 	if Choice%x% = 38
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\500.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\500.jpg
 		}
 	if Choice%x% = 39
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\why.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\why.jpg
 		}
 	if Choice%x% = 40
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\autoide.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\autoide.jpg
 		}
 	if Choice%x% = 41
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\africa.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\africa.jpg
 		}
 	if Choice%x% = 42
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\noq.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\noq.jpg
 		}
 	if Choice%x% = 43
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\p11.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\p11.jpg
 		}
 	if Choice%x% = 44
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\actived.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\actived.jpg
 		}
 	if Choice%x% = 45
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\accessd.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\accessd.jpg
 		}
 	if Choice%x% = 46
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\rsaadmin.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\rsaadmin.jpg
 		}
 	if Choice%x% = 47
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\transfer.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\transfer.jpg
 		}
 	if Choice%x% = 48
 		{
 		Gui, Tab, Game
-		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\receive.jpg
+		Gui, Add, Picture, x%a% y%y% w100 h100 vPicN%x% gTokenGet%x%, %A_WorkingDir%\resources\receive.jpg
 		}	
 	}
 }
@@ -450,7 +450,7 @@ return
 TokenGet1:
 if RadioGroup = 1
 	{
-	Gui, Add, Picture, x12 y79 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x12 y79 w100 h100 gReverse1, %A_WorkingDir%\resources\token.jpg
 	}
 else if RadioGroup = 2
 	{
@@ -460,6 +460,10 @@ else if RadioGroup = 3
 	{
 	Gui, Add, Picture, x12 y79 w100 h100, %A_WorkingDir%\resources\token2.jpg	
 	}
+return
+
+Reverse1:
+GuiControl, Show, PicN1
 return
 
 TokenGet2:
