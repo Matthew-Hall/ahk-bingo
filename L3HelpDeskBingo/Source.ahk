@@ -21,6 +21,7 @@ Gui, Add, Button, x232 y430 w100 h30 +Disabled, New Game
 Gui, Tab, Game
 Gui, Add, Text, x14 y29 w530 h30 , Just click a square to add your token. Click menu to go back to the menu. From there you`ncan select a different token or start a new round. If you receive duplicates, pick one.
 Gui, Add, Button, x450 y29 w100 h30 , Menu
+Gui, Color, F9F9F9 ;changes background to an off-white color
 Gui, Show, x189 y87 h630 w563, ServiceDesk Bingo
 Return
 
@@ -162,12 +163,14 @@ while x < 25
 		send ^{Tab}
 		Gui, Tab, Menu
 		Gui, Add, Button, x362 y430 w100 h30, Continue
+		Gui, Add, Button, x102 y430 w100 h30 , Seed
 		Gui, Tab, Game
 		Gui, Add, Picture, x232 y299 w100 h100 gClickFree, %A_WorkingDir%\resources\free.jpg
 		return
 		}
 	{ 
 	Random, Choice%x%, 1, 48
+	Seed%x% := Choice%x%
 	if Choice%x% = 1
 		{
 		Gui, Tab, Game
@@ -987,6 +990,10 @@ else if RadioGroup = 4
 	}
 return
 
+ButtonSeed:
+MsgBox, %Seed1%, %Seed2%, %Seed3%, %Seed4%, %Seed5%, %Seed6%, %Seed7%, %Seed8%, %Seed9%, %Seed10%, %Seed11%, %Seed12%, %Seed13%, %Seed14%, %Seed15%, %Seed16%, %Seed17%, %Seed18%, %Seed19%, %Seed20%, %Seed21%, %Seed22%, %Seed23%, %Seed24%
+return
+
 ButtonContinue:
 ButtonMenu:
 send ^{Tab}
@@ -996,6 +1003,7 @@ ButtonInfo:
 MsgBox Version 2.0. See change log for further information. 
 return
 
+GuiEscape:
 GuiClose:
 ButtonExit:
 ExitApp
