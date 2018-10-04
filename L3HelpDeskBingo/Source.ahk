@@ -1,7 +1,7 @@
 #Warn
 #NoEnv
 
-SetWorkingDir %A_ScriptDir%
+SetWorkingDir %A_ScriptDir% ;set to script directory to see files
 
 Gui, Add, Tab, x4 y-1 w550 h20 , Menu|Game
 Gui, Add, Text, x100 y100 w363 h149 +Center, Welcome to Service Desk bingo!`nHave fun and enjoy the game. This was made with the intention that it would be used throughout the day as just a tiny boost to yourself between calls. I hope you are able to find it useful. 
@@ -17,7 +17,7 @@ Gui, Add, Radio, x303 y350 w80 h30 gCheck, Red Token
 Gui, Add, Radio, x433 y350 w80 h30 gCheck, Black
 Gui, Add, Button, x232 y490 w100 h30 , Info
 Gui, Add, Button, x232 y550 w100 h30 , Exit
-Gui, Add, Button, x232 y430 w100 h30 +Disabled, New Game
+Gui, Add, Button, x232 y430 w100 h30 +Disabled, New Game ;disabled until check
 Gui, Tab, Game
 Gui, Add, Text, x14 y29 w530 h30 , Just click a square to add your token. Click menu to go back to the menu. From there you`ncan select a different token or start a new round. If you receive duplicates, pick one.
 Gui, Add, Button, x450 y29 w100 h30 , Menu
@@ -26,10 +26,10 @@ Gui, Show, x189 y87 h630 w563, ServiceDesk Bingo
 Return
 
 Check:
-gui, submit, nohide
+gui, submit, nohide ;when the radio buttons are checked, do the following
 if (RadioGroup = 1 or 2 or 3 or 4){   
 	Gui, Tab, Menu
-	Gui, Add, Button, x232 y430 w100 h30, New Game
+	Gui, Add, Button, x232 y430 w100 h30, New Game ;undisables the new game button
 	} 
 return
 
@@ -37,10 +37,10 @@ ButtonNewGame:
 x = 0
 while x < 25
 	{ 
-	x += 1
+	x += 1 ;runs through loop until there are 24 boxes, then runs the 25th loop command
 	if x = 1
 		{ 
-		a = 12
+		a = 12 ;coords
 		y = 79
 		} 
 	if x = 2
@@ -158,7 +158,7 @@ while x < 25
 		a = 452
 		y = 519
 		}
-	if x = 25
+	if x = 25 ;end of loop sequence
 		{
 		send ^{Tab}
 		Gui, Tab, Menu
@@ -169,9 +169,9 @@ while x < 25
 		return
 		}
 	{ 
-	Random, Choice%x%, 1, 48
+	Random, Choice%x%, 1, 48 ;straightforward. Chooses a random number. See bottom of scrip***
 	Seed%x% := Choice%x%
-	if Choice%x% = 1
+	if Choice%x% = 1 ;if the random number is 1 of 48, then add this picture otherwise should continue
 		{
 		Gui, Tab, Game
 		Gui, Add, Picture, x%a% y%y% w100 h100 gTokenGet%x%, %A_WorkingDir%\resources\restart.jpg
@@ -414,6 +414,8 @@ while x < 25
 	} 
 } 
 return
+
+;the following are things that happen when you click a picture
 
 ClickFree:
 if RadioGroup = 1
@@ -990,8 +992,10 @@ else if RadioGroup = 4
 	}
 return
 
+;this is the seed populator from after the random function
+;potentially this could be referred back to in order to stack the previous picture on top of whatever token
 ButtonSeed:
-MsgBox, %Seed1%, %Seed2%, %Seed3%, %Seed4%, %Seed5%, %Seed6%, %Seed7%, %Seed8%, %Seed9%, %Seed10%, %Seed11%, %Seed12%, %Seed13%, %Seed14%, %Seed15%, %Seed16%, %Seed17%, %Seed18%, %Seed19%, %Seed20%, %Seed21%, %Seed22%, %Seed23%, %Seed24%
+MsgBox, %Seed1%,%Seed2%,%Seed3%,%Seed4%,%Seed5%,%Seed6%,%Seed7%,%Seed8%,%Seed9%,%Seed10%,%Seed11%,%Seed12%,%Seed13%,%Seed14%,%Seed15%,%Seed16%,%Seed17%,%Seed18%,%Seed19%,%Seed20%,%Seed21%,%Seed22%,%Seed23%,%Seed24%
 return
 
 ButtonContinue:
