@@ -6,9 +6,12 @@ SetWorkingDir %A_ScriptDir% ;set to script directory to see files
 Gui, Add, Tab, x4 y-1 w550 h20 , Menu|Game
 Gui, Add, Text, x100 y100 w363 h149 +Center, Welcome to Service Desk bingo!`nHave fun and enjoy the game. This was made with the intention that it would be used throughout the day as just a tiny boost to yourself between calls. I hope you are able to find it useful. 
 Gui, Add, Text, x180 y219 w250 h30, Please select a token to use. Then, click play.
-Gui, Add, Picture, x40 y249 w100 h100, %A_WorkingDir%\resources\token.jpg
-Gui, Add, Picture, x170 y249 w100 h100, %A_WorkingDir%\resources\token3.jpg
-Gui, Add, Picture, x300 y249 w100 h100, %A_WorkingDir%\resources\token2.jpg
+Gui, Add, Picture, x40 y249 w100 h100, %A_WorkingDir%\resources\bngobox.jpg
+Gui, Add, Picture, x40 y249 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
+Gui, Add, Picture, x170 y249 w100 h100, %A_WorkingDir%\resources\bngobox.jpg
+Gui, Add, Picture, x170 y249 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
+Gui, Add, Picture, x300 y249 w100 h100, %A_WorkingDir%\resources\bngobox.jpg
+Gui, Add, Picture, x300 y249 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png
 Gui, Add, Picture, x430 y249 w100 h100, %A_WorkingDir%\resources\bngobox.jpg
 Gui, Add, Picture, x430 y249 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\token.png
 Gui, Add, Radio, x43 y350 w80 h30 gCheck vRadioGroup, Green Token
@@ -21,7 +24,7 @@ Gui, Add, Button, x232 y430 w100 h30 +Disabled, New Game ;disabled until check
 Gui, Tab, Game
 Gui, Add, Text, x14 y29 w530 h30 , Just click a square to add your token. Click menu to go back to the menu. From there you`ncan select a different token or start a new round. If you receive duplicates, pick one.
 Gui, Add, Button, x450 y29 w100 h30 , Menu
-Gui, Color, F9F9F9 ;changes background to an off-white color
+Gui, Color, FFFFFF
 Gui, Show, x189 y87 h630 w563, ServiceDesk Bingo
 Return
 
@@ -421,17 +424,17 @@ ClickFree:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y299 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x232 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y299 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x232 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y299 w100 h100, %A_WorkingDir%\resources\token2.jpg
+	Gui, Add, Picture, x232 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png
 	}
 else if RadioGroup = 4
 	{
@@ -444,17 +447,17 @@ TokenGet1:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y79 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x12 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y79 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x12 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y79 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x12 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	} 
 else if RadioGroup = 4
 	{
@@ -467,17 +470,17 @@ TokenGet2:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y79 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x122 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y79 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x122 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y79 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x122 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -490,17 +493,17 @@ TokenGet3:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y79 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x232 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y79 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x232 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y79 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x232 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -513,17 +516,17 @@ TokenGet4:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y79 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x342 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y79 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x342 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y79 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x342 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png
 	}
 else if RadioGroup = 4
 	{
@@ -536,17 +539,17 @@ TokenGet5:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y79 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x452 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y79 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x452 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y79 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x452 y79 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -559,17 +562,17 @@ TokenGet6:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y189 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x12 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y189 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x12 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y189 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x12 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -582,17 +585,17 @@ TokenGet7:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y189 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x122 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y189 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x122 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y189 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x122 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -605,17 +608,17 @@ TokenGet8:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y189 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x232 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y189 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x232 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y189 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x232 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -628,17 +631,17 @@ TokenGet9:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y189 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x342 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y189 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x342 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y189 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x342 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -651,17 +654,17 @@ TokenGet10:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y189 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x452 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y189 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x452 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y189 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x452 y189 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -674,17 +677,17 @@ TokenGet11:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y299 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x12 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y299 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x12 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y299 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x12 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -697,17 +700,17 @@ TokenGet12:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y299 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x122 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y299 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x122 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y299 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x122 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -720,17 +723,17 @@ TokenGet13:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y299 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x342 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y299 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x342 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y299 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x342 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -743,17 +746,17 @@ TokenGet14:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y299 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x452 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y299 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x452 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y299 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x452 y299 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -766,17 +769,17 @@ TokenGet15:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y409 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x12 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y409 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x12 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y409 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x12 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -789,17 +792,17 @@ TokenGet16:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y409 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x122 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y409 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x122 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y409 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x122 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -812,17 +815,17 @@ TokenGet17:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y409 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x232 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y409 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x232 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y409 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x232 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -835,17 +838,17 @@ TokenGet18:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y409 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x342 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y409 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x342 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y409 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x342 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -858,17 +861,17 @@ TokenGet19:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y409 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x452 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y409 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x452 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y409 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x452 y409 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -881,17 +884,17 @@ TokenGet20:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y519 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x12 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y519 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x12 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x12 y519 w100 h100, %A_WorkingDir%\resources\token2.jpg	
+	Gui, Add, Picture, x12 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png	
 	}
 else if RadioGroup = 4
 	{
@@ -904,17 +907,17 @@ TokenGet21:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y519 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x122 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y519 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x122 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x122 y519 w100 h100, %A_WorkingDir%\resources\token2.jpg
+	Gui, Add, Picture, x122 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png
 	}
 else if RadioGroup = 4
 	{
@@ -927,17 +930,17 @@ TokenGet22:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y519 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x232 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y519 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x232 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x232 y519 w100 h100, %A_WorkingDir%\resources\token2.jpg
+	Gui, Add, Picture, x232 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png
 	}
 else if RadioGroup = 4
 	{
@@ -950,17 +953,17 @@ TokenGet23:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y519 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x342 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y519 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x342 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x342 y519 w100 h100, %A_WorkingDir%\resources\token2.jpg
+	Gui, Add, Picture, x342 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png
 	}
 else if RadioGroup = 4
 	{
@@ -973,17 +976,17 @@ TokenGet24:
 if RadioGroup = 1
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y519 w100 h100, %A_WorkingDir%\resources\token.jpg
+	Gui, Add, Picture, x452 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 	}
 else if RadioGroup = 2
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y519 w100 h100, %A_WorkingDir%\resources\token3.jpg
+	Gui, Add, Picture, x452 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 	}
 else if RadioGroup = 3
 	{
 	Gui, Tab, Game
-	Gui, Add, Picture, x452 y519 w100 h100, %A_WorkingDir%\resources\token2.jpg
+	Gui, Add, Picture, x452 y519 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png
 	}
 else if RadioGroup = 4
 	{
