@@ -172,7 +172,7 @@ while x < 25
 		return
 		}
 	{ 
-	Random, Choice%x%, 1, 48 ;straightforward. Chooses a random number. See bottom of scrip***
+	Random, Choice%x%, 1, 48 ;straightforward. Chooses a random number. See bottom of script***
 	Seed%x% := Choice%x%
 	if Choice%x% = 1 ;if the random number is 1 of 48, then add this picture otherwise should continue
 		{
@@ -997,8 +997,9 @@ return
 
 ;this is the seed populator from after the random function
 ;potentially this could be referred back to in order to stack the previous picture on top of whatever token
+
 ButtonSeed:
-MsgBox, %Seed1%,%Seed2%,%Seed3%,%Seed4%,%Seed5%,%Seed6%,%Seed7%,%Seed8%,%Seed9%,%Seed10%,%Seed11%,%Seed12%,%Seed13%,%Seed14%,%Seed15%,%Seed16%,%Seed17%,%Seed18%,%Seed19%,%Seed20%,%Seed21%,%Seed22%,%Seed23%,%Seed24%
+InputBox, NewSeed, Bingo Seed, Your Seed is listed in the box. You may copy it now for later or enter a new seed.`nIf you already changed the seed the displayed information may be incorrect.`nWould you like to enter a new seed?, , 500, 160, , , , , %Seed1%,%Seed2%,%Seed3%,%Seed4%,%Seed5%,%Seed6%,%Seed7%,%Seed8%,%Seed9%,%Seed10%,%Seed11%,%Seed12%,%Seed13%,%Seed14%,%Seed15%,%Seed16%,%Seed17%,%Seed18%,%Seed19%,%Seed20%,%Seed21%,%Seed22%,%Seed23%,%Seed24%
 return
 
 ButtonContinue:
@@ -1007,7 +1008,7 @@ send ^{Tab}
 return
 	
 ButtonInfo:
-MsgBox Version 2.0. See change log for further information. 
+MsgBox Version 1.7.5.10.4.18 See GitHub for further information. 
 return
 
 GuiEscape:
