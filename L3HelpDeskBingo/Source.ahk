@@ -1059,12 +1059,10 @@ return
 StringSplit, Seed, % "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",`, ;comma separated: `,
 
 ButtonSeed:
-{
-	InputBox, NewSeed, Bingo Seed, Your Seed is listed in the box. You may copy it now for later or enter a new seed.`nIf you already changed the seed the displayed information may be incorrect.`nWould you like to enter a new seed?, , 500, 160, , , , , %Seed1%,%Seed2%,%Seed3%,%Seed4%,%Seed5%,%Seed6%,%Seed7%,%Seed8%,%Seed9%,%Seed10%,%Seed11%,%Seed12%,%Seed13%,%Seed14%,%Seed15%,%Seed16%,%Seed17%,%Seed18%,%Seed19%,%Seed20%,%Seed21%,%Seed22%,%Seed23%,%Seed24%
+	InputBox, NewSeed, Bingo Seed, Your Seed is listed in the box. You may copy it now for later or enter a new seed.`nIf you do not change the whole string the rest will be randomized.`nWould you like to enter a new seed?, , 500, 160, , , , , %Seed1%,%Seed2%,%Seed3%,%Seed4%,%Seed5%,%Seed6%,%Seed7%,%Seed8%,%Seed9%,%Seed10%,%Seed11%,%Seed12%,%Seed13%,%Seed14%,%Seed15%,%Seed16%,%Seed17%,%Seed18%,%Seed19%,%Seed20%,%Seed21%,%Seed22%,%Seed23%,%Seed24%
 	if ErrorLevel
-		MsgBox, The current seed will not change
+		return
 	else
-	{
 		WorkingSeed := StrSplit(NewSeed, ",", A_Space)
 		MsgBox % "Your new seed is " WorkingSeed[1] WorkingSeed[2] WorkingSeed[3] WorkingSeed[4] WorkingSeed[5] WorkingSeed[6] WorkingSeed[7] WorkingSeed[8] WorkingSeed[9] WorkingSeed[10] WorkingSeed[11] WorkingSeed[12] WorkingSeed[13] WorkingSeed[14] WorkingSeed[15] WorkingSeed[16] WorkingSeed[17] WorkingSeed[18] WorkingSeed[19] WorkingSeed[20] WorkingSeed[21] WorkingSeed[22] WorkingSeed[23] WorkingSeed[24]
 		Seed1 := WorkingSeed[1] 
@@ -1091,9 +1089,9 @@ ButtonSeed:
 		Seed22 := WorkingSeed[22]
 		Seed23 := WorkingSeed[23]
 		Seed24 := WorkingSeed[24]
-			
-	}
-}
+		
+		if 1 + 1 = 2
+			#Include %A_ScriptDir%\resources\myseed.ahk
 return
 
 /*
@@ -1110,7 +1108,7 @@ return
 	
 ButtonInfo:
 {
-	MsgBox Version 1.8a.10.5.2 See GitHub for further information. 
+	MsgBox Version 1.8b.10.5.3 See GitHub for further information. 
 }
 return
 
