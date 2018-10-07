@@ -1,7 +1,26 @@
 # ahk-bingo
 It's a bingo game for the L3 HelpDesk. Going through major revisions daily. 
 
-Future development can be seen in planning.md
+Future development can be seen on the Projects tab. Issues/ bugs can be seen and reported on the issues tab. 
+
+Changelog:
+2.0 - will include a redesign and add new bingo cards
+1.8 - a seed generator/ submission program. You can send your seeds to other users or use fun seeds. 
+1.7 - new transparent tokens
+1.6 - token select screen from the menu
+...
+1.0 - this is the initial release. 1 token, one board with minimal text
+
+You may see "a" or "b" versions. A is a work in progress release and B is a final build for that version.
+
+For the license, please see the license file.
+
+
+
+
+
+
+
 
 
 Note regarding the use of the Rand function in the bingo game:
