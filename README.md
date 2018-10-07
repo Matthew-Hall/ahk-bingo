@@ -4,6 +4,7 @@ It's a bingo game for the L3 HelpDesk. Going through major revisions daily.
 Future development can be seen on the Projects tab. Issues/ bugs can be seen and reported on the issues tab. 
 
 Changelog:
+
 2.0 - will include a redesign and add new bingo cards
 
 1.8 - a seed generator/ submission program. You can send your seeds to other users or use fun seeds. 
