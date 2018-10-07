@@ -2,289 +2,286 @@ if Seed1 = 1
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\boxer.jpg
-	send ^{Tab}
 	}
 if Seed1 = 2
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\cics.jpg
-	send ^{Tab}
 	}
 if Seed1 = 3
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\bomgar.jpg
-	send ^{Tab}
 	}
 if Seed1 = 4
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\sap.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 5
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\EASR.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 6
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\escalate.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 7
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\snow.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 8
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\autotime.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 9
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\ticketnumber.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 10
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\undel3.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 11
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\undelbell.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 12
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\status.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 13
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\notsolved.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 14
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\callback.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 15
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\external.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 16
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\ooo.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 17
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\lost.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 18
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\euu.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 19
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\local.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 20
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\answer.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 21
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\closed.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 22
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\building157.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 23
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\vpn.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 24
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\invincea.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 25
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\told.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 26
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\sharepoint.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 27
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\driveshare.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 28
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\rtw.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 29
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\loa.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 30
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\outlook.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 31
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\outbound.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 32
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\friday.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 33
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\500.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 34
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\why.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 35
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\autoide.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 36
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\africa.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 37
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\noq.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 38
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\restart.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 39
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\p11.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 40
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\actived.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 41
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\accessd.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 42
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\rsaadmin.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 43
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\transfer.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 44
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\receive.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 45
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\quickescalation.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 46
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\important.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 47
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\snowemail.jpg
-	send ^{Tab}
+	
 	}
 if Seed1 = 48
 	{
 	Gui, Tab, Game
 	Gui, Add, Picture, x12 y81 w100 h100 gTokenGet1, %A_WorkingDir%\resources\chat.jpg
-	send ^{Tab}
+	
 	}
 if Seed2 = 1
 	{
@@ -5806,4 +5803,5 @@ if Seed24 = 48
 	Gui, Tab, Game
 	Gui, Add, Picture, x452 y519 w100 h100 gTokenGet24, %A_WorkingDir%\resources\chat.jpg
 	}
-return
+send ^{Tab}
+return	

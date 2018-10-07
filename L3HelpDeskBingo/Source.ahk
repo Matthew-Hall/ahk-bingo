@@ -1108,7 +1108,7 @@ return
 	
 ButtonInfo:
 {
-	MsgBox Version 1.8b.10.5.3 See GitHub for further information. 
+	MsgBox Version 1.8b.10.7.1 See GitHub for further information. 
 }
 return
 
