@@ -15,13 +15,13 @@ You may see "a" or "b" versions. A is a work in progress release and B is a fina
 
 For the license, please see the license file.
 
-
-
-
-
-
-
-
+.
+.
+.
+.
+.
+.
+.
 
 Note regarding the use of the Rand function in the bingo game:
 
