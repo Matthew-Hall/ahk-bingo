@@ -22,7 +22,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Desktop Details (please complete the following information):**
  - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
+ - AutoHotkey Version [e.g. 1.3]
  - Version [e.g. 22]
 
 **Additional context**
