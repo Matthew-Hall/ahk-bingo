@@ -5,6 +5,8 @@ SetWorkingDir %A_ScriptDir% ;set to script directory to see files
 
 Gui, Add, Tab, x4 y-1 w550 h20 , Menu|Game
 
+Gui, Tab, Menu
+Gui, Add, Picture, x0 y0 w563 h20, %A_WorkingDir%\resources\banner.png
 Gui, Add, Text, x100 y100 w363 h149 +Center, Welcome to Service Desk bingo!`nHave fun and enjoy the game. This was made with the intention that it would be used throughout the day as just a tiny boost to yourself between calls. I hope you are able to find it useful. 
 Gui, Add, Text, x180 y219 w250 h30, Please select a token to use. Then, click play.
 Gui, Add, Picture, x40 y249 w100 h100, %A_WorkingDir%\resources\bngobox.jpg
@@ -34,10 +36,11 @@ Return
 
 Check:
 {
-	gui, submit, nohide ;when the radio buttons are checked, do the following
+	gui, submit, nohide  ;when the radio buttons are checked, do the following
 	if (RadioGroup = 1 or 2 or 3 or 4){   
 		Gui, Tab, Menu
-		Gui, Add, Button, x232 y430 w100 h30, New Game ;undisables the new game button
+		Gui, Add, Picture, x0 y0 w563 h20, %A_WorkingDir%\resources\banner.png
+		Gui, Add, Button, x232 y430 w100 h30 +Default, New Game ;undisables the new game button
 	} 
 }
 return
@@ -1108,7 +1111,7 @@ return
 	
 ButtonInfo:
 {
-	MsgBox Version 1.8b.10.7.1 See GitHub for further information. 
+	MsgBox Version 1.9a.10.11.1 See GitHub for further information. 
 }
 return
 
