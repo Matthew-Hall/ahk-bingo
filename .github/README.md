@@ -7,6 +7,8 @@ Changelog:
 
 2.0 - will include a redesign and add new bingo cards
 
+1.9 - banner, and menu update. Select tokens to use by clicking them. 
+
 1.8 - a seed generator/ submission program. You can send your seeds to other users or use fun seeds. 
 
 1.7 - new transparent tokens
