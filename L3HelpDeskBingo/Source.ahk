@@ -10,17 +10,17 @@ Gui, Add, Picture, x0 y0 w563 h20, %A_WorkingDir%\resources\banner.png
 Gui, Add, Text, x100 y100 w363 h149 +Center, Welcome to Service Desk bingo!`nHave fun and enjoy the game. This was made with the intention that it would be used throughout the day as just a tiny boost to yourself between calls. I hope you are able to find it useful. 
 Gui, Add, Text, x180 y219 w250 h30, Please select a token to use. Then, click play.
 Gui, Add, Picture, x40 y249 w100 h100, %A_WorkingDir%\resources\bngobox.jpg
-Gui, Add, Picture, x40 y249 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
+Gui, Add, Picture, x40 y249 w100 h100 gGreenTokenCheck +BackgroundTrans, %A_WorkingDir%\resources\gtoken.png
 Gui, Add, Picture, x170 y249 w100 h100, %A_WorkingDir%\resources\bngobox.jpg
-Gui, Add, Picture, x170 y249 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
+Gui, Add, Picture, x170 y249 w100 h100 gBlueTokenCheck +BackgroundTrans, %A_WorkingDir%\resources\btoken.png
 Gui, Add, Picture, x300 y249 w100 h100, %A_WorkingDir%\resources\bngobox.jpg
-Gui, Add, Picture, x300 y249 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png
+Gui, Add, Picture, x300 y249 w100 h100 gRedTokenCheck +BackgroundTrans, %A_WorkingDir%\resources\rtoken.png
 Gui, Add, Picture, x430 y249 w100 h100, %A_WorkingDir%\resources\bngobox.jpg
-Gui, Add, Picture, x430 y249 w100 h100 +BackgroundTrans, %A_WorkingDir%\resources\token.png
+Gui, Add, Picture, x430 y249 w100 h100 gBlackTokenCheck +BackgroundTrans, %A_WorkingDir%\resources\token.png
 Gui, Add, Radio, x43 y350 w80 h30 gCheck vRadioGroup, Green Token
-Gui, Add, Radio, x173 y350 w80 h30 gCheck, Blue Token
-Gui, Add, Radio, x303 y350 w80 h30 gCheck, Red Token
-Gui, Add, Radio, x433 y350 w80 h30 gCheck, Black
+Gui, Add, Radio, x173 y350 w80 h30 gCheck , Blue Token
+Gui, Add, Radio, x303 y350 w80 h30 gCheck , Red Token
+Gui, Add, Radio, x433 y350 w80 h30 gCheck , Black
 Gui, Add, Button, x232 y490 w100 h30 , Info
 Gui, Add, Button, x232 y550 w100 h30 , Exit
 Gui, Add, Button, x232 y430 w100 h30 +Disabled, New Game ;disabled until check
@@ -34,10 +34,44 @@ Gui, Color, FFFFFF
 Gui, Show, x189 y87 h630 w563, ServiceDesk Bingo
 Return
 
+GreenTokenCheck: 
+{
+	RadioGroup = 1
+	GuiControl, , RadioGroup, 1
+	if (RadioGroup = 1){   
+		Gui, Tab, Menu
+		Gui, Add, Picture, x0 y0 w563 h20, %A_WorkingDir%\resources\banner.png
+		Gui, Add, Button, x232 y430 w100 h30 +Default, New Game ;undisables the new game button
+	}
+}
+return
+
+BlueTokenCheck:
+{
+	RadioGroup = 2
+	GuiControl, , RadioGroup, 1
+	if (RadioGroup = 2){
+		Gui, Tab, Menu
+		Gui, Add, Picture, x0 y0 w563 h20, %A_WorkingDir%\resources\banner.png
+		Gui, Add, Button, x232 y430 w100 h30 +Default, New Game ;undisables the new game button
+	}
+}
+return
+
+RedTokenCheck:
+RadioGroup = 3
+GuiControl, , RadioGroup, 1
+return
+
+BlackTokenCheck:
+RadioGroup = 4
+GuiControl, , RadioGroup, 1
+return
+
 Check:
 {
 	gui, submit, nohide  ;when the radio buttons are checked, do the following
-	if (RadioGroup = 1 or 2 or 3 or 4){   
+	if (RadioGroup = 1){   
 		Gui, Tab, Menu
 		Gui, Add, Picture, x0 y0 w563 h20, %A_WorkingDir%\resources\banner.png
 		Gui, Add, Button, x232 y430 w100 h30 +Default, New Game ;undisables the new game button
@@ -173,12 +207,12 @@ ButtonNewGame:
 			}
 		if x = 25 ;end of loop sequence
 			{
-			send ^{Tab}
 			Gui, Tab, Menu
 			Gui, Add, Button, x362 y430 w100 h30, Continue
 			Gui, Add, Button, x102 y430 w100 h30 , Seed
 			Gui, Tab, Game
 			Gui, Add, Picture, x232 y299 w100 h100 gClickFree, %A_WorkingDir%\resources\free.jpg
+			send ^{Tab}
 			return
 			}
 		{ 
@@ -1111,7 +1145,7 @@ return
 	
 ButtonInfo:
 {
-	MsgBox Version 1.9a.10.11.1 See GitHub for further information. 
+	MsgBox Version 1.9a.10.12.1 See GitHub for further information. 
 }
 return
 
