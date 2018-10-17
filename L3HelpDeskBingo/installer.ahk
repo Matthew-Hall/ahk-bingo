@@ -13,12 +13,6 @@ FileAssociate("AutohotkeyScript",".mp3",'"C:\Program Files\AutoHotkey\AutoHotkey
 ;#####################################################################################FileAssociate() -  Associates an extension with a program's registry label, which is created automatically by passing the Label and Cmd parameters, Icon being optional. 
 FileAssociate(Label:="AutohotkeyScript",Ext:=".ahk",Cmd:="%A_WorkingDir%\AutoHotkeyU64.exe",Icon:="") ;by Ħakito   -   https://autohotkey.com/boards/viewtopic.php?f=6&t=55638
 {
-	iF SubStr(Ext,1,1)!="." or StrLen(Ext)<=1 ;Weeds out faulty extensions, which must start with a period, and contain more than 1 character
-		Ext:=""
-	iF SubStr(Label,1,1)="." ;Weeds out faulty labels such as ".exe" which is an extension and not a label
-		Label:=""
-	iF Cmd!="" and RegRead("HKEY_CLASSES_ROOT\" Label,"FriendlyTypeName") ;Do not allow the modification of some important registry labels
-		Cmd:=""
 	SuccessLevel:=0
 	iF Label
 	{
