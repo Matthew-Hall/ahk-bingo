@@ -1145,7 +1145,11 @@ return
 	
 ButtonInfo:
 {
-	MsgBox Version 1.9a.10.12.1 See GitHub for further information. 
+	MsgBox, 4, Bingo, Version 1.9a.10.17.1 See GitHub for further information.`nWould you like to download the latest version? It will be placed in the current folder under update.zip.
+	IfMsgBox Yes
+		{
+		Run, %A_WorkingDir%\update.ahk
+	}
 }
 return
 
