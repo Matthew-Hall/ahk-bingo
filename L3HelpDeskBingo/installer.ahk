@@ -5,12 +5,6 @@
 
 SetWorkingDir %A_ScriptDir% 
 
-/*
-Associating extensions to uncompiled ahk scripts can be done like this:
-FileAssociate("AutohotkeyScript",".mp3",'"C:\Program Files\AutoHotkey\AutoHotkey.exe" "C:\Script.ahk" "%1" %*')
-*/
-
-;#####################################################################################FileAssociate() -  Associates an extension with a program's registry label, which is created automatically by passing the Label and Cmd parameters, Icon being optional. 
 FileAssociate(Label:="AutohotkeyScript",Ext:=".ahk",Cmd:="%A_WorkingDir%\AutoHotkeyU64.exe",Icon:="") ;by Ħakito   -   https://autohotkey.com/boards/viewtopic.php?f=6&t=55638
 {
 	SuccessLevel:=0
