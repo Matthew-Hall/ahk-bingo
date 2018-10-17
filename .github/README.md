@@ -5,6 +5,10 @@ Future development can be seen on the Projects tab. Issues/ bugs can be seen and
 
 Changelog:
 
+2.2 - updater and feedback buttons. 
+
+2.1 - Dark theme
+
 2.0 - will include a redesign and add new bingo cards
 
 1.9 - banner, and menu update. Select tokens to use by clicking them. 
