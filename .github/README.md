@@ -9,7 +9,7 @@ Changelog:
 
 2.1 - Dark theme
 
-2.0 - will include a redesign and add new bingo cards
+2.0 - will include a slight redesign and add new bingo cards. Will generalize to be Help Desk Bingo instead of just L3 Bingo.
 
 1.9 - banner, and menu update. Select tokens to use by clicking them. Updater included. 
 
