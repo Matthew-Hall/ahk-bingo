@@ -2,9 +2,10 @@
 #NoTrayIcon
 ; #Warn
 #SingleInstance Off
-try Menu Tray, Icon, appwiz.cpl, -1500
 
-MsgBox, You are running the bingo installer. Step 1 is to install autohotkeys. This is not the full installer. Some things simply won't work. Use the 64 bit version/ U64. Once done double click Bingo.ahk to play bingo. 
+MsgBox, You are running the bingo installer. Step 1 is to install autohotkeys. This is the full Autohotkeys installer. Use the 64 bit version/ U64. Once done double click Bingo.ahk to play bingo.
+
+try Menu Tray, Icon, appwiz.cpl, -1500
 if !A_IsAdmin && !%False%
 {
     if A_OSVersion not in WIN_2003,WIN_XP,WIN_2000

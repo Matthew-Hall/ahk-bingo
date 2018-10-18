@@ -20,13 +20,13 @@ whr.Send()
 ; Using 'true' above and the call below allows the script to remain responsive.
 whr.WaitForResponse()
 version := whr.ResponseText
-MsgBox % version
-
-UrlDownloadToFile, *0 %url%, %A_WorkingDir%\%Filename%
-if ErrorLevel = 1
-	MsgBox, There was some error updating the file. You may have the latest version, or it is blocked.
-else if ErrorLevel = 0
-	MsgBox, The update/ download appears to have been successful. Please check the update folder. 
-else 
-	MsgBox, some other crazy error occured. 
+MsgBox, 1, Info, % version
+	IfMsgBox OK
+		UrlDownloadToFile, *0 %url%, %A_WorkingDir%\%Filename%
+		if ErrorLevel = 1
+			MsgBox, There was some error updating the file. You may have the latest version, or it is blocked.
+		else if ErrorLevel = 0
+			MsgBox, The update/ download appears to have been successful. Please check the update folder. 
+		else 
+			MsgBox, some other crazy error occured. 
 Return 
