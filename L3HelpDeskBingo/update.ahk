@@ -14,7 +14,13 @@ SetWorkingDir %A_ScriptDir% ;set to script directory to see files
 url = https://github.com/MattAHK/ahk-bingo/archive/master.zip
 Filename = Update.zip
 
-
+whr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
+whr.Open("GET", "https://raw.githubusercontent.com/MattAHK/ahk-bingo/Matt's-working-branch/L3HelpDeskBingo/version.txt", true)
+whr.Send()
+; Using 'true' above and the call below allows the script to remain responsive.
+whr.WaitForResponse()
+version := whr.ResponseText
+MsgBox % version
 
 UrlDownloadToFile, *0 %url%, %A_WorkingDir%\%Filename%
 if ErrorLevel = 1
@@ -23,5 +29,4 @@ else if ErrorLevel = 0
 	MsgBox, The update/ download appears to have been successful. Please check the update folder. 
 else 
 	MsgBox, some other crazy error occured. 
-
-return
+Return 
