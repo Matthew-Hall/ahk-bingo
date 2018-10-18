@@ -1,7 +1,7 @@
 # ahk-bingo
 It's a bingo game for the L3 HelpDesk. Going through major revisions daily. 
 
-Future development can be seen on the Projects tab. Issues/ bugs can be seen and reported on the issues tab. 
+Future development can be seen on the Projects tab. Issues/ bugs can be seen and reported on the issues tab. AutoHotkeys is a Windows wrapper (I'm certain that's the right word), and likely only works for Windows XP - Current. 
 
 Changelog:
 
