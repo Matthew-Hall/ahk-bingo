@@ -1145,7 +1145,8 @@ return
 	
 ButtonInfo:
 {
-	MsgBox, 4, Bingo, Version 1.9a.10.17.4 See GitHub for further information.`nWould you like to check for updates and download the most recent version? It will be placed in the current folder under update.zip.
+	FileReadLine, VNum, %A_WorkingDir%\version.txt, 1
+	MsgBox, 4, Bingo, Version %VNum% See GitHub for further information.`nWould you like to check for updates and download the most recent version? It will be placed in the current folder under update.zip.
 	IfMsgBox Yes
 		{
 		Run, %A_WorkingDir%\update.ahk
