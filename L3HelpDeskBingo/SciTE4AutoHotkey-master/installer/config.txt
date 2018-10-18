@@ -1,3 +1,0 @@
-;!@Install@!UTF-8!
-RunProgram="InternalAHK.exe /CP65001 $SETUP"
-;!@InstallEnd@!

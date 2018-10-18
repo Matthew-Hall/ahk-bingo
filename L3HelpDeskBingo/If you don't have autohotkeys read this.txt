@@ -1,0 +1,12 @@
+Hello, 
+
+If you are reading this, then it is already too late. JK
+If you are reading this, you need assistance getting bingo.ahk to run. 
+1. Drag and drop bingo.ahk onto AutoHotkeyU64.exe
+2. The game should now open. 
+3. go to https://autohotkey.com/download/
+4. click on download autohotkey .zip 
+5. install autohotkeys using the installer. 
+	You should now be able to double click bingo.ahk to open it each time. 
+
+6. Give me feedback! Thanks!
