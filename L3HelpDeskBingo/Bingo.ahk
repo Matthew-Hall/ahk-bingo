@@ -1,5 +1,7 @@
 #Warn
 #NoEnv
+SetBatchLines -1
+ListLines Off
 
 SetWorkingDir %A_ScriptDir% ;set to script directory to see files
 
