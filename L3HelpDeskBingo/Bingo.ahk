@@ -1156,6 +1156,15 @@ ButtonInfo:
 }
 return
 
+OnError("LogError")
+%cause% := error
+
+LogError(exception) {
+    FileAppend % "Error on line " exception.Line ": " exception.Message "`n"
+        , errorlog.txt
+    return true
+}
+
 GuiEscape:
 GuiClose:
 ButtonExit:
